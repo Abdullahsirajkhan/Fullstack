@@ -1,0 +1,33 @@
+header{
+    background-color: rgba(104, 3, 3, 0.945);
+    color: azure;
+    text-align: center;
+
+    p{
+        color: rgb(212, 169, 104);
+    }
+}
+
+main{
+    background-color: rgb(239, 231, 221);
+
+    img{
+        float: left;
+        width: 180px;
+        margin-right : 30px;
+    }
+
+    .biography{
+        padding: 10px;
+    }
+
+    h2{
+        color: rgb(132, 28, 28);
+    }
+}
+
+footer{
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 20px;
+}
