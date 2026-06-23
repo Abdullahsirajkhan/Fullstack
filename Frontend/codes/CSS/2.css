@@ -1,0 +1,44 @@
+header{
+    background-color: rgb(139, 24, 24);
+    color: rgb(211, 194, 171);
+    text-align: center;
+
+    h1{
+        color: blanchedalmond;
+    }
+    p{
+        color: cornsilk;
+        font-family: cursive;
+    }
+}
+
+body{
+
+main{
+    background-color: rgb(234, 229, 213);
+
+    .Biography{
+        padding: 20px;
+        margin-bottom: 100px;
+        img{
+            float: left;
+            width: 200px;
+            margin-right: 10px;
+        }
+    }
+    .Writings{
+        font-style: italic;
+        margin-bottom: 50px;
+    }
+}
+
+}
+
+footer{
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
