@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(4, 4, 58);
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-align: center;
+}
+
+#logo{
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    margin: 20px;
+    float: left;
+}
+
+#logo .logo_2{
+    color: rgb(236, 209, 71);
+}
+
+header p{
+    display: inline-block;
+    color: white;
+    margin: 20px;
+}
+
+#Home{
+    color: gold;
+    text-decoration: underline;
+}
+
+#Book_Now{
+    color: black;
+    background-color: gold;
+    padding: 5px;
+    font-size: smaller;
+    text-align: right;
+    float: right;
+}
+
+.Box1{
+    width: 100%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxzlJy7a0_YofqmDNWaLGdAsw2NGaQF6djVw&s);
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Box2{
+    max-width: 400px;
+    min-width: 300px;
+    color: white;
+    padding: 20px;
+}
+
+#button1{
+    color:black;
+    background-color: gold;
+    display: inline-block;
+    padding: 6px;
+    font-size: 12px;
+    margin: 9px;
+}
+
+#button2{
+    display: inline-block;
+    color:white;
+    border: 12px;
+    border: 2px solid white;
+    padding: 4px;
+    font-size: 12px;
+}
+
+.middle{
+    background-color: white;
+    text-align: center;
+}
+
+.Countries{
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.Maldives, .Switzerland, .Greece {
+    display: inline-block;
+    width: 30%;               
+    margin: 1%;               
+    vertical-align: top;      
+    box-sizing: border-box;
+}
+
+.Countries img {
+    width: 100%;              /* Forces images to stretch completely across the card width */
+    height: auto;             /* Maintains proper aspect ratio */
+    display: block;           /* Prevents weird inline gaps underneath graphics */
+    margin-bottom: 10px;      /* Spacing between image and card title */
+}
