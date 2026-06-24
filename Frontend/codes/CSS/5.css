@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(7, 7, 61);
+    padding: 30px;
+    height: 300;    
+}
+
+
+.image_box{
+    border: 9px solid gold;
+    display: inline-block;
+    width: 32%;
+    padding: 30px;;
+
+    img{
+        width: 390px;
+        height: 390px;
+    }
+}
+
+.text_box{
+    padding: 30px;
+    border: 9px solid gold;
+    display: inline-block;
+    width: 54%;
+    color: white;
+    height: 395px;
+    vertical-align: top;
+    
+}
+
+#PRO{
+    display: inline-block;
+    background-color: gold;
+    color: black;
+    font-size: x-large;
+    padding: 4px;
+}
