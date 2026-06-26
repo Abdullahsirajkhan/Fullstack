@@ -1,0 +1,162 @@
+body{
+    background-color: rgb(246, 238, 229);
+}
+
+header{
+    background-color: rgb(85, 0, 0);
+    color: white;
+    display: flex;
+    margin: 0px;
+    .title{
+        margin: 0px 20px;
+        line-height: 1;
+        p{
+            color: rgb(183, 158, 18);
+            font-size: smaller;
+        }
+    }
+}
+
+.Box{
+    display: flex;
+    margin-left: auto;
+    margin-right: 140px;
+}
+
+.Sub-Box{
+    margin: 30px 30px;
+    font-size: medium;
+}
+
+
+.hero{
+    display: flex;
+    margin: 20px;
+    border: 2px solid rgb(229, 214, 196) ;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px rgb(229, 214, 196);
+}
+
+.Heading{
+    h1{
+    color: rgb(85, 0, 0);  
+    }  
+    margin: px 10px;
+    border: 2px solid rgb(229, 214, 196);
+    padding: 20px;
+    max-height: 450px;
+}
+
+.Explore_work{
+    background-color: rgb(85, 0, 0);
+    color: white;
+    border-radius: 12px;
+    padding: 1px 5px;
+    text-align: center;
+    max-width: 180px;
+    margin: 40px 0px;
+}
+
+.Key_features{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    h3{
+        color: rgb(85, 0, 0);
+    }
+}
+
+.feature{
+    border: 2px solid rgb(229, 214, 196);
+    box-shadow: 2px rgb(229, 214, 196);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 0px 10px ;
+}
+#qoute{
+        color: rgb(171, 109, 16);
+    }
+
+.hero_2{
+    display: flex;
+    h2{
+        color: rgb(85, 0, 0);
+        margin: 10px;
+    }
+}
+
+.about_poet{
+    border: 2px solid rgb(229, 214, 196);
+    border-radius: 3%;
+    margin: 20px;
+}
+.description{
+    display: flex;
+    margin: 0px 10px;
+    max-width: 600px;
+}
+
+#image{
+    width: 170px;
+    height: 250px;
+    border-radius: 5%;
+    border: 2px solid rgb(229, 214, 196);
+    box-shadow: 2px rgb(229, 214, 196);
+    margin: 10px;
+}
+
+.Selected-Collections{
+    border: 2px solid rgb(229, 214, 196) ;
+    border-radius: 10px;
+    margin: 20px 10px;
+    width: 25%;
+}
+
+.collection{
+    display: flex;
+    padding: 10px 10px;
+    margin: 20px;
+    border: 2px solid rgb(229, 214, 196);
+    border-radius: 10px;
+
+    .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+        background-color: rgb(85, 0, 0);
+        max-height: 30px;
+        color: white;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-top: 15px;
+    }
+}
+
+.view_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(85, 0, 0);
+    padding: 2px;
+    color: white;
+    border-radius: 15px; 
+    margin: 5px 70px;
+}
+
+.work{
+    border: 2px solid rgb(229, 214, 196);
+    border-radius: 20px;
+    margin: 20px 10px;
+    p{
+        padding: 20px;
+    }
+}
+
+footer{
+    background-color: rgb(240, 226, 208);
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+}
