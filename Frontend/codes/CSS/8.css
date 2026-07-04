@@ -1,0 +1,117 @@
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: rgb(243, 240, 240);
+}
+
+.container{
+    display: grid;
+    grid-template-rows: auto repeat(4,1fr);
+    grid-template-columns: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 30px 0px;
+}
+
+
+#logo{
+    color: rgb(22, 13, 1);
+    font-weight: 900;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px 30px;
+}
+
+.nav-bar{
+    display: flex;
+    color: black;
+    font-weight: 450;
+    font-size: medium;
+    margin: -2px;
+}
+
+.nav-bar a{
+    margin: 0px 20px;
+}
+
+
+#book-now{
+    margin: -10px 30px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 10px;
+    padding: 7px 15px;
+    font-size: smaller;
+}
+
+.item{
+    display: flex;
+}
+
+.hero-1{
+    background-image: url(..//CSS/7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    width: 100%;
+    border: 2px solid rgb(164, 158, 158);
+}
+
+.text{
+    padding: 0px 40px;
+    max-width: 350px;
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+}
+
+#explore{
+    background-color: rgb(46, 127, 46);
+    padding: 5px 15px;
+    border-radius: 7px;
+    font-size: smaller;
+    font-weight: 500;
+    border: 2px solid black;
+}
+
+#adventure{
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px 15px;
+    color: white;
+    font-size: smaller;
+    font-weight: 500;
+}
+
+.first{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+
