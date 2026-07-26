@@ -1,0 +1,156 @@
+/* Remove button styles */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Remove link styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove list styles */
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(38, 60, 87);
+}
+
+.navs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-links{
+    display: flex;
+    padding: 10px;   
+}
+
+
+#logo{
+    color: azure;
+    padding: 0px 20px;
+}
+
+.gap{
+    margin: 0px 20px;
+    color: aliceblue;
+}
+
+#start{
+    color: burlywood;
+    padding: 5px 20px;
+    border: solid 1px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#main-heading{
+    text-align: center;
+    color: aliceblue;
+}
+
+#text{
+    text-align: center;
+    color: aliceblue;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+#join{
+    color: rgb(17, 20, 40);
+    margin: 10px;
+    padding: 5px 20px;  
+    border: solid 1px burlywood;  
+    border-radius: 10px;
+    background-color: burlywood;
+}
+
+#courses{
+    color: rgb(243, 242, 240);
+    margin: 10px;
+    padding: 5px 20px;
+    border: solid 1px rgb(249, 247, 245);
+    border-radius: 10px;
+}
+
+#key{
+    text-align: center;
+    color: aliceblue;
+}
+
+.container{
+    display: flex;
+    padding: 40px;
+}
+
+.js{
+    color: rgb(187, 197, 205);
+    padding: 20px;
+    margin: 10px;
+    border: solid 1px rgb(30, 33, 53);
+    border-radius: 10px;
+    background-color: rgb(74, 78, 103);
+}
+
+#review{
+    text-align: center;
+    color: rgb(176, 186, 195);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#news{
+    text-align: center;
+    color: aliceblue;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+#sub{
+    color: rgb(17, 20, 40);
+    background-color: burlywood;
+    border: solid 1px rgb(17, 20, 40);
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.footer-container{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px rgb(177, 172, 172);
+}
+
+.links{
+    display: flex;
+    color: aliceblue;    
+}
+
+.link{
+    color: whitesmoke;
+    display: flex;
+    margin: 12px;
+}
+
+.social{
+    margin: 0px 20px;
+}
