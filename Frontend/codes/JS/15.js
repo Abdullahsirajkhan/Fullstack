@@ -27,3 +27,27 @@ function managequeue(queue){
 }
 
 console.log(managequeue(myarr));
+
+
+const classData = [
+  { name: "Ali", score: 40 },
+  { name: "Sara", score: 85 },
+  { name: "Zayn", score: 30 },
+  { name: "Hira", score: 60 }
+];
+
+function cat(students){
+    let results = [];
+
+    for(student of students){
+        if(student.score>=50){
+            results.push(student.name);
+        } 
+        else{
+            results.unshift(student.name);
+        }
+    }
+    return results;    
+}
+
+console.log(cat(classData));
