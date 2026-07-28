@@ -140,3 +140,57 @@ const userCart = [
 console.log(processcart(userCart, storeStock));
 
 
+function manager(max){
+
+    let tasks = [];
+
+    return { "add" : function addTask(name){
+        if(tasks.length>=max){
+            tasks.shift();
+            tasks.push(name);
+        }        
+        else{
+            tasks.push(name);
+        }
+        return tasks.length;
+    } , "complete" : function completeTask(){
+        if(!tasks.length){
+            return "NO TASKS";
+        }
+        return tasks.shift();
+    }, "get" : function getTasks(){
+        let taskscopy = [];
+
+        for(let task of tasks){
+            taskscopy.push(task);
+        }
+        return taskscopy;
+    }}
+}
+
+// --- Setup ---
+const taskMgr = manager(2);
+
+// --- Test Case 1: Adding Tasks Within Capacity ---
+console.log("Adding Task 1 (Returns length):", taskMgr.add("Study Node.js")); 
+console.log("Current Tasks:", taskMgr.get()); 
+
+console.log("Adding Task 2 (Returns length):", taskMgr.add("Build API")); 
+console.log("Current Tasks:", taskMgr.get()); 
+
+
+// --- Test Case 2: Exceeding Capacity ---
+console.log("Adding Task 3 (Exceeds max of 2):", taskMgr.add("Deploy DB")); 
+console.log("Current Tasks After Exceeding Max:", taskMgr.get()); 
+
+
+// --- Test Case 3: Completing Tasks ---
+console.log("Completed Task:", taskMgr.complete()); 
+console.log("Tasks Left:", taskMgr.get()); 
+
+console.log("Completed Task:", taskMgr.complete()); 
+console.log("Tasks Left:", taskMgr.get()); 
+
+
+// --- Test Case 4: Completing Task When Empty ---
+console.log("Completing from empty list:", taskMgr.complete());
