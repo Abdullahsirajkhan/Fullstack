@@ -71,3 +71,40 @@ function sep(orders){
     };
     return struct;
 }
+
+const orderlist = [
+  { id: 101, amount: 150 },
+  { id: 102, amount: 45 },
+  { id: 103, amount: 200 },
+  { id: 104, amount: 100 }
+];
+
+
+
+console.log(sep(orderlist));
+
+function filter(scores, num){
+    let passed = [];
+
+    for(key in scores){
+        if(scores[key]>=num && scores[key]>=90){
+            passed.unshift(key);
+        }
+        if(scores[key]>=num && scores[key]<90){
+            passed.push(key);
+        }
+    }
+
+    return passed;
+}
+
+const classScores = {
+  Ali: 75,
+  Sara: 95,
+  Zayn: 40,
+  Hira: 92,
+  Bilal: 80
+};
+
+console.log(filter(classScores,70));
+
