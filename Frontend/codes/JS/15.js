@@ -39,7 +39,7 @@ const classData = [
 function cat(students){
     let results = [];
 
-    for(student of students){
+    for(let student of students){
         if(student.score>=50){
             results.push(student.name);
         } 
@@ -57,7 +57,7 @@ function sep(orders){
     let Porders = [];
     let Sorders = [];
 
-    for(order of orders){
+    for(let order of orders){
         if(order.amount>100){
             Porders.push(order.id);
         }
@@ -86,7 +86,7 @@ console.log(sep(orderlist));
 function filter(scores, num){
     let passed = [];
 
-    for(key in scores){
+    for(let key in scores){
         if(scores[key]>=num && scores[key]>=90){
             passed.unshift(key);
         }
@@ -107,4 +107,36 @@ const classScores = {
 };
 
 console.log(filter(classScores,70));
+
+
+function processcart(carts, inventory){
+
+    let log = [];
+
+    for (let cart of carts){
+        if(Object.hasOwn(inventory,cart.name) && inventory[cart.name]>=cart.requestedQty){
+            inventory[cart.name]-=cart.requestedQty;
+            log.push({"item": cart.name , "status" : "FULFILLED" , "qty" : cart.requestedQty});
+        }
+        else{
+            log.unshift({"item": cart.name , "status" : "REJECTED" , "qty" : 0});            
+        }
+    }
+    return {"log" : log , "newinvent" : inventory};
+}
+
+const storeStock = {
+  Laptop: 4,
+  Mouse: 10,
+  Keyboard: 0
+};
+
+const userCart = [
+  { name: "Laptop", requestedQty: 2 },
+  { name: "Keyboard", requestedQty: 1 },
+  { name: "Mouse", requestedQty: 3 }
+];
+
+console.log(processcart(userCart, storeStock));
+
 
