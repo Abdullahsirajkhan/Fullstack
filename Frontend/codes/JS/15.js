@@ -51,3 +51,23 @@ function cat(students){
 }
 
 console.log(cat(classData));
+
+
+function sep(orders){
+    let Porders = [];
+    let Sorders = [];
+
+    for(order of orders){
+        if(order.amount>100){
+            Porders.push(order.id);
+        }
+        else{
+            Sorders.push(order.id);
+        }
+    }
+    let struct = {
+        "priority" : Porders ,
+        "standard" : Sorders
+    };
+    return struct;
+}
