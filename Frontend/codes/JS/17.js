@@ -9,7 +9,7 @@ function process(cart, Tax){
         if(!item.inStock || item.quantity<=0){
             continue;
         }
-        if(item.caegory === "ELECTRONICS"){
+        if(item.category === "ELECTRONICS"){
             item.price=item.price - item.price*0.10;
         }
         valid.push({
@@ -27,7 +27,7 @@ function process(cart, Tax){
 
     for(let item of valid){
         count += item.quantity;
-        total += item.unitprice;         
+        total += item.itemTotal;         
     }
 
     return {
